@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848F24761D33ADC60009E1F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24751D33ADC60009E1F0 /* main.m */; };
+		848F247F1D33ADC60009E1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848F247D1D33ADC60009E1F0 /* Main.storyboard */; };
+		848F24811D33ADC60009E1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848F24801D33ADC60009E1F0 /* Assets.xcassets */; };
+		848F24841D33ADC60009E1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848F24821D33ADC60009E1F0 /* LaunchScreen.storyboard */; };
+		848F248F1D33ADC60009E1F0 /* MacondoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F248E1D33ADC60009E1F0 /* MacondoTests.m */; };
+		848F249A1D33ADC60009E1F0 /* MacondoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24991D33ADC60009E1F0 /* MacondoUITests.m */; };
+		848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24A91D33AE0C0009E1F0 /* AppDelegate.m */; };
+		848F24B11D33AE8F0009E1F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24B01D33AE8F0009E1F0 /* ViewController.m */; };
+		848F24B81D33AF4F0009E1F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848F24BA1D33AF4F0009E1F0 /* Localizable.strings */; };
+		848F24BC1D33AF670009E1F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848F24BE1D33AF670009E1F0 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848F248B1D33ADC60009E1F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848F24691D33ADC60009E1F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848F24701D33ADC60009E1F0;
+			remoteInfo = Macondo;
+		};
+		848F24961D33ADC60009E1F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848F24691D33ADC60009E1F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848F24701D33ADC60009E1F0;
+			remoteInfo = Macondo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		848F24711D33ADC60009E1F0 /* Macondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F24751D33ADC60009E1F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848F247E1D33ADC60009E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848F24801D33ADC60009E1F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848F24831D33ADC60009E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848F24851D33ADC60009E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848F248A1D33ADC60009E1F0 /* MacondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F248E1D33ADC60009E1F0 /* MacondoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacondoTests.m; sourceTree = "<group>"; };
+		848F24901D33ADC60009E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848F24951D33ADC60009E1F0 /* MacondoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacondoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848F24991D33ADC60009E1F0 /* MacondoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacondoUITests.m; sourceTree = "<group>"; };
+		848F249B1D33ADC60009E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848F24A81D33AE0C0009E1F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		848F24A91D33AE0C0009E1F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848F24AF1D33AE8F0009E1F0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		848F24B01D33AE8F0009E1F0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		848F24B21D33AEBF0009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		848F24B31D33AEBF0009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		848F24B91D33AF4F0009E1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		848F24BB1D33AF520009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		848F24BD1D33AF670009E1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		848F24BF1D33AF6B0009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		848F24C01D33B2500009E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		848F24C11D33B2560009E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		848F24C31D33B3680009E1F0 /* RemoteSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteSource.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848F246E1D33ADC60009E1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24871D33ADC60009E1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24921D33ADC60009E1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848F24681D33ADC60009E1F0 = {
+			isa = PBXGroup;
+			children = (
+				848F24731D33ADC60009E1F0 /* Macondo */,
+				848F248D1D33ADC60009E1F0 /* MacondoTests */,
+				848F24981D33ADC60009E1F0 /* MacondoUITests */,
+				848F24721D33ADC60009E1F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848F24721D33ADC60009E1F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848F24711D33ADC60009E1F0 /* Macondo.app */,
+				848F248A1D33ADC60009E1F0 /* MacondoTests.xctest */,
+				848F24951D33ADC60009E1F0 /* MacondoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848F24731D33ADC60009E1F0 /* Macondo */ = {
+			isa = PBXGroup;
+			children = (
+				848F24C21D33B2910009E1F0 /* Helper */,
+				848F24AE1D33AE5E0009E1F0 /* Model */,
+				848F24AD1D33AE470009E1F0 /* View */,
+				848F24AC1D33AE230009E1F0 /* Controller */,
+				848F24A71D33ADCE0009E1F0 /* Delegate */,
+				848F24741D33ADC60009E1F0 /* Supporting Files */,
+			);
+			path = Macondo;
+			sourceTree = "<group>";
+		};
+		848F24741D33ADC60009E1F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848F247D1D33ADC60009E1F0 /* Main.storyboard */,
+				848F24821D33ADC60009E1F0 /* LaunchScreen.storyboard */,
+				848F24801D33ADC60009E1F0 /* Assets.xcassets */,
+				848F24BE1D33AF670009E1F0 /* InfoPlist.strings */,
+				848F24BA1D33AF4F0009E1F0 /* Localizable.strings */,
+				848F24851D33ADC60009E1F0 /* Info.plist */,
+				848F24751D33ADC60009E1F0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		848F248D1D33ADC60009E1F0 /* MacondoTests */ = {
+			isa = PBXGroup;
+			children = (
+				848F248E1D33ADC60009E1F0 /* MacondoTests.m */,
+				848F24901D33ADC60009E1F0 /* Info.plist */,
+			);
+			path = MacondoTests;
+			sourceTree = "<group>";
+		};
+		848F24981D33ADC60009E1F0 /* MacondoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				848F24991D33ADC60009E1F0 /* MacondoUITests.m */,
+				848F249B1D33ADC60009E1F0 /* Info.plist */,
+			);
+			path = MacondoUITests;
+			sourceTree = "<group>";
+		};
+		848F24A71D33ADCE0009E1F0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				848F24A81D33AE0C0009E1F0 /* AppDelegate.h */,
+				848F24A91D33AE0C0009E1F0 /* AppDelegate.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		848F24AC1D33AE230009E1F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				848F24AF1D33AE8F0009E1F0 /* ViewController.h */,
+				848F24B01D33AE8F0009E1F0 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		848F24AD1D33AE470009E1F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848F24AE1D33AE5E0009E1F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848F24C21D33B2910009E1F0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				848F24C31D33B3680009E1F0 /* RemoteSource.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848F24701D33ADC60009E1F0 /* Macondo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F249E1D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "Macondo" */;
+			buildPhases = (
+				848F246D1D33ADC60009E1F0 /* Sources */,
+				848F246E1D33ADC60009E1F0 /* Frameworks */,
+				848F246F1D33ADC60009E1F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macondo;
+			productName = Macondo;
+			productReference = 848F24711D33ADC60009E1F0 /* Macondo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848F24891D33ADC60009E1F0 /* MacondoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F24A11D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "MacondoTests" */;
+			buildPhases = (
+				848F24861D33ADC60009E1F0 /* Sources */,
+				848F24871D33ADC60009E1F0 /* Frameworks */,
+				848F24881D33ADC60009E1F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848F248C1D33ADC60009E1F0 /* PBXTargetDependency */,
+			);
+			name = MacondoTests;
+			productName = MacondoTests;
+			productReference = 848F248A1D33ADC60009E1F0 /* MacondoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		848F24941D33ADC60009E1F0 /* MacondoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848F24A41D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "MacondoUITests" */;
+			buildPhases = (
+				848F24911D33ADC60009E1F0 /* Sources */,
+				848F24921D33ADC60009E1F0 /* Frameworks */,
+				848F24931D33ADC60009E1F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848F24971D33ADC60009E1F0 /* PBXTargetDependency */,
+			);
+			name = MacondoUITests;
+			productName = MacondoUITests;
+			productReference = 848F24951D33ADC60009E1F0 /* MacondoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848F24691D33ADC60009E1F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wangchangyang;
+				TargetAttributes = {
+					848F24701D33ADC60009E1F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					848F24891D33ADC60009E1F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 848F24701D33ADC60009E1F0;
+					};
+					848F24941D33ADC60009E1F0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 848F24701D33ADC60009E1F0;
+					};
+				};
+			};
+			buildConfigurationList = 848F246C1D33ADC60009E1F0 /* Build configuration list for PBXProject "Macondo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 848F24681D33ADC60009E1F0;
+			productRefGroup = 848F24721D33ADC60009E1F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848F24701D33ADC60009E1F0 /* Macondo */,
+				848F24891D33ADC60009E1F0 /* MacondoTests */,
+				848F24941D33ADC60009E1F0 /* MacondoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848F246F1D33ADC60009E1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F24B81D33AF4F0009E1F0 /* Localizable.strings in Resources */,
+				848F24841D33ADC60009E1F0 /* LaunchScreen.storyboard in Resources */,
+				848F24BC1D33AF670009E1F0 /* InfoPlist.strings in Resources */,
+				848F24811D33ADC60009E1F0 /* Assets.xcassets in Resources */,
+				848F247F1D33ADC60009E1F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24881D33ADC60009E1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24931D33ADC60009E1F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848F246D1D33ADC60009E1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F24B11D33AE8F0009E1F0 /* ViewController.m in Sources */,
+				848F24761D33ADC60009E1F0 /* main.m in Sources */,
+				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24861D33ADC60009E1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F248F1D33ADC60009E1F0 /* MacondoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848F24911D33ADC60009E1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848F249A1D33ADC60009E1F0 /* MacondoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848F248C1D33ADC60009E1F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848F24701D33ADC60009E1F0 /* Macondo */;
+			targetProxy = 848F248B1D33ADC60009E1F0 /* PBXContainerItemProxy */;
+		};
+		848F24971D33ADC60009E1F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848F24701D33ADC60009E1F0 /* Macondo */;
+			targetProxy = 848F24961D33ADC60009E1F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		848F247D1D33ADC60009E1F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848F247E1D33ADC60009E1F0 /* Base */,
+				848F24B21D33AEBF0009E1F0 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		848F24821D33ADC60009E1F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848F24831D33ADC60009E1F0 /* Base */,
+				848F24B31D33AEBF0009E1F0 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		848F24BA1D33AF4F0009E1F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848F24B91D33AF4F0009E1F0 /* en */,
+				848F24BB1D33AF520009E1F0 /* zh-Hans */,
+				848F24C11D33B2560009E1F0 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		848F24BE1D33AF670009E1F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848F24BD1D33AF670009E1F0 /* en */,
+				848F24BF1D33AF6B0009E1F0 /* zh-Hans */,
+				848F24C01D33B2500009E1F0 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848F249C1D33ADC60009E1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848F249D1D33ADC60009E1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848F249F1D33ADC60009E1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Macondo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.Macondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		848F24A01D33ADC60009E1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Macondo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.Macondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		848F24A21D33ADC60009E1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MacondoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.MacondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macondo.app/Macondo";
+			};
+			name = Debug;
+		};
+		848F24A31D33ADC60009E1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MacondoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.MacondoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Macondo.app/Macondo";
+			};
+			name = Release;
+		};
+		848F24A51D33ADC60009E1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MacondoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.MacondoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Macondo;
+			};
+			name = Debug;
+		};
+		848F24A61D33ADC60009E1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MacondoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.MacondoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Macondo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848F246C1D33ADC60009E1F0 /* Build configuration list for PBXProject "Macondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F249C1D33ADC60009E1F0 /* Debug */,
+				848F249D1D33ADC60009E1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848F249E1D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "Macondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F249F1D33ADC60009E1F0 /* Debug */,
+				848F24A01D33ADC60009E1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		848F24A11D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "MacondoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F24A21D33ADC60009E1F0 /* Debug */,
+				848F24A31D33ADC60009E1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		848F24A41D33ADC60009E1F0 /* Build configuration list for PBXNativeTarget "MacondoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848F24A51D33ADC60009E1F0 /* Debug */,
+				848F24A61D33ADC60009E1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848F24691D33ADC60009E1F0 /* Project object */;
+}
