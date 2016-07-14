@@ -1,5 +1,5 @@
 //
-//  PlayersViewController.h
+//  AddFriendViewController.h
 //  Macondo
 //
 //  Created by wangchangyang on 16/7/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlayersViewController : UITableViewController
-
-
+@interface AddFriendViewController : UITableViewController
 
 @end

@@ -10,4 +10,14 @@
 
 @implementation PlayersViewController
 
+
+- (IBAction)cancelToPlayerVC:(UIStoryboardSegue *)segue {
+    
+}
+
+- (IBAction)savePlayerDetail:(UIStoryboardSegue *)segue {
+    
+    
+}
+
 @end
