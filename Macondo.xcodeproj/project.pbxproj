@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8465E2581D38E6E400DF9A8F /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */; };
+		8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25A1D38E71000DF9A8F /* PlayingViewController.m */; };
+		8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25E1D38EE6700DF9A8F /* PosterImageView.m */; };
 		848F24761D33ADC60009E1F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24751D33ADC60009E1F0 /* main.m */; };
 		848F247F1D33ADC60009E1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848F247D1D33ADC60009E1F0 /* Main.storyboard */; };
 		848F24811D33ADC60009E1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848F24801D33ADC60009E1F0 /* Assets.xcassets */; };
@@ -14,11 +17,8 @@
 		848F248F1D33ADC60009E1F0 /* MacondoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F248E1D33ADC60009E1F0 /* MacondoTests.m */; };
 		848F249A1D33ADC60009E1F0 /* MacondoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24991D33ADC60009E1F0 /* MacondoUITests.m */; };
 		848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24A91D33AE0C0009E1F0 /* AppDelegate.m */; };
-		848F24B11D33AE8F0009E1F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24B01D33AE8F0009E1F0 /* ViewController.m */; };
 		848F24B81D33AF4F0009E1F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848F24BA1D33AF4F0009E1F0 /* Localizable.strings */; };
 		848F24BC1D33AF670009E1F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 848F24BE1D33AF670009E1F0 /* InfoPlist.strings */; };
-		84F79B481D3779FA00E5E524 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F79B471D3779FA00E5E524 /* PlayersViewController.m */; };
-		84F79B4B1D37ABBD00E5E524 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F79B4A1D37ABBD00E5E524 /* AddFriendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8465E2561D38E6E400DF9A8F /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
+		8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		8465E2591D38E71000DF9A8F /* PlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingViewController.h; sourceTree = "<group>"; };
+		8465E25A1D38E71000DF9A8F /* PlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingViewController.m; sourceTree = "<group>"; };
+		8465E25D1D38EE6700DF9A8F /* PosterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterImageView.h; sourceTree = "<group>"; };
+		8465E25E1D38EE6700DF9A8F /* PosterImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterImageView.m; sourceTree = "<group>"; };
 		848F24711D33ADC60009E1F0 /* Macondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848F24751D33ADC60009E1F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		848F247E1D33ADC60009E1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,8 +59,6 @@
 		848F249B1D33ADC60009E1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848F24A81D33AE0C0009E1F0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		848F24A91D33AE0C0009E1F0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		848F24AF1D33AE8F0009E1F0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		848F24B01D33AE8F0009E1F0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		848F24B21D33AEBF0009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		848F24B31D33AEBF0009E1F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		848F24B91D33AF4F0009E1F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -66,10 +70,6 @@
 		848F24C31D33B3680009E1F0 /* RemoteSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteSource.h; sourceTree = "<group>"; };
 		84F79B421D37704E00E5E524 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		84F79B441D37706B00E5E524 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		84F79B461D3779FA00E5E524 /* PlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersViewController.h; sourceTree = "<group>"; };
-		84F79B471D3779FA00E5E524 /* PlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersViewController.m; sourceTree = "<group>"; };
-		84F79B491D37ABBD00E5E524 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
-		84F79B4A1D37ABBD00E5E524 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +97,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8465E2541D38E66800DF9A8F /* Playing */ = {
+			isa = PBXGroup;
+			children = (
+				8465E2591D38E71000DF9A8F /* PlayingViewController.h */,
+				8465E25A1D38E71000DF9A8F /* PlayingViewController.m */,
+			);
+			path = Playing;
+			sourceTree = "<group>";
+		};
+		8465E2551D38E6E400DF9A8F /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				8465E2561D38E6E400DF9A8F /* FriendsTableViewController.h */,
+				8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		8465E25C1D38EE3500DF9A8F /* Poster */ = {
+			isa = PBXGroup;
+			children = (
+				8465E25D1D38EE6700DF9A8F /* PosterImageView.h */,
+				8465E25E1D38EE6700DF9A8F /* PosterImageView.m */,
+			);
+			path = Poster;
+			sourceTree = "<group>";
+		};
 		848F24681D33ADC60009E1F0 = {
 			isa = PBXGroup;
 			children = (
@@ -174,12 +201,8 @@
 		848F24AC1D33AE230009E1F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				848F24AF1D33AE8F0009E1F0 /* ViewController.h */,
-				848F24B01D33AE8F0009E1F0 /* ViewController.m */,
-				84F79B461D3779FA00E5E524 /* PlayersViewController.h */,
-				84F79B471D3779FA00E5E524 /* PlayersViewController.m */,
-				84F79B491D37ABBD00E5E524 /* AddFriendViewController.h */,
-				84F79B4A1D37ABBD00E5E524 /* AddFriendViewController.m */,
+				8465E2551D38E6E400DF9A8F /* Friends */,
+				8465E2541D38E66800DF9A8F /* Playing */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +210,7 @@
 		848F24AD1D33AE470009E1F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8465E25C1D38EE3500DF9A8F /* Poster */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,11 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848F24B11D33AE8F0009E1F0 /* ViewController.m in Sources */,
-				84F79B481D3779FA00E5E524 /* PlayersViewController.m in Sources */,
+				8465E2581D38E6E400DF9A8F /* FriendsTableViewController.m in Sources */,
+				8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */,
 				848F24761D33ADC60009E1F0 /* main.m in Sources */,
 				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
-				84F79B4B1D37ABBD00E5E524 /* AddFriendViewController.m in Sources */,
+				8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
