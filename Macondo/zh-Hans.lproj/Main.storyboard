@@ -555,10 +555,10 @@
             </objects>
             <point key="canvasLocation" x="-794.5" y="1700.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--我的信息-->
         <scene sceneID="NI1-Gm-Qkd">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="aXi-Sf-ti5" sceneMemberID="viewController">
+                <tableViewController title="我的信息" hidesBottomBarWhenPushed="YES" id="aXi-Sf-ti5" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="67S-ce-aCx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,10 +583,10 @@
             </objects>
             <point key="canvasLocation" x="47.5" y="1429.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--收藏的音乐-->
         <scene sceneID="ydH-1C-fdc">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="J26-Cx-EE9" sceneMemberID="viewController">
+                <tableViewController title="收藏的音乐" hidesBottomBarWhenPushed="YES" id="J26-Cx-EE9" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="T2L-mX-DhG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -611,10 +611,10 @@
             </objects>
             <point key="canvasLocation" x="47.5" y="2207.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--粉丝-->
         <scene sceneID="2yV-Mp-WUf">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="QRC-Fj-rhv" sceneMemberID="viewController">
+                <tableViewController title="粉丝" hidesBottomBarWhenPushed="YES" id="QRC-Fj-rhv" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wtx-1z-bYY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -639,10 +639,10 @@
             </objects>
             <point key="canvasLocation" x="41.5" y="3157.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--设置-->
         <scene sceneID="RRh-sZ-DxG">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="4hN-l0-AvK" sceneMemberID="viewController">
+                <tableViewController title="设置" hidesBottomBarWhenPushed="YES" id="4hN-l0-AvK" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kU7-lx-Bog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
