@@ -1,5 +1,5 @@
 //
-//  FriendsTableViewController.h
+//  SetupTableViewController.h
 //  Macondo
 //
 //  Created by wangchangyang on 16/7/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendsTableViewController : UITableViewController
+@interface SetupTableViewController : UITableViewController
 
 @end

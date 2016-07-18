@@ -15,13 +15,41 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 2;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    if (section == 0) {
+        
+        return 1;
+    }
     
     return 10;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0) {
+        
+        return 1;
+    }
+    
+    return 18;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    if (indexPath.section == 0) {
+        
+        static NSString *ident = @"FansSearchCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
+        
+        return cell;
+    }
+    
     static NSString *ident = @"FansCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
     

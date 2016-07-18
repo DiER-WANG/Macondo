@@ -10,7 +10,9 @@
 		84172C291D3CA53000B4E6C8 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C281D3CA53000B4E6C8 /* ProfileTableViewController.m */; };
 		84172C2D1D3CA9E600B4E6C8 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C2C1D3CA9E600B4E6C8 /* FavoriteTableViewController.m */; };
 		84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C301D3CAD1B00B4E6C8 /* FansTableViewController.m */; };
-		8465E2581D38E6E400DF9A8F /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */; };
+		84172C351D3CC41D00B4E6C8 /* SetupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C341D3CC41D00B4E6C8 /* SetupTableViewController.m */; };
+		84172C381D3CC84400B4E6C8 /* StarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */; };
+		84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */; };
 		8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25A1D38E71000DF9A8F /* PlayingViewController.m */; };
 		8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25E1D38EE6700DF9A8F /* PosterImageView.m */; };
 		848F24761D33ADC60009E1F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F24751D33ADC60009E1F0 /* main.m */; };
@@ -51,8 +53,12 @@
 		84172C2C1D3CA9E600B4E6C8 /* FavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewController.m; sourceTree = "<group>"; };
 		84172C2F1D3CAD1B00B4E6C8 /* FansTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FansTableViewController.h; sourceTree = "<group>"; };
 		84172C301D3CAD1B00B4E6C8 /* FansTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FansTableViewController.m; sourceTree = "<group>"; };
-		8465E2561D38E6E400DF9A8F /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
-		8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		84172C331D3CC41D00B4E6C8 /* SetupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupTableViewController.h; sourceTree = "<group>"; };
+		84172C341D3CC41D00B4E6C8 /* SetupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupTableViewController.m; sourceTree = "<group>"; };
+		84172C361D3CC84400B4E6C8 /* StarsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarsTableViewController.h; sourceTree = "<group>"; };
+		84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarsTableViewController.m; sourceTree = "<group>"; };
+		84172C3A1D3CCD6900B4E6C8 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
+		84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
 		8465E2591D38E71000DF9A8F /* PlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingViewController.h; sourceTree = "<group>"; };
 		8465E25A1D38E71000DF9A8F /* PlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingViewController.m; sourceTree = "<group>"; };
 		8465E25D1D38EE6700DF9A8F /* PosterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterImageView.h; sourceTree = "<group>"; };
@@ -132,6 +138,24 @@
 			path = Fans;
 			sourceTree = "<group>";
 		};
+		84172C321D3CC3F000B4E6C8 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				84172C331D3CC41D00B4E6C8 /* SetupTableViewController.h */,
+				84172C341D3CC41D00B4E6C8 /* SetupTableViewController.m */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		84172C391D3CCD4200B4E6C8 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				84172C3A1D3CCD6900B4E6C8 /* FriendsTableViewController.h */,
+				84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
 		8465E2541D38E66800DF9A8F /* Playing */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,13 +165,13 @@
 			path = Playing;
 			sourceTree = "<group>";
 		};
-		8465E2551D38E6E400DF9A8F /* Friends */ = {
+		8465E2551D38E6E400DF9A8F /* Stars */ = {
 			isa = PBXGroup;
 			children = (
-				8465E2561D38E6E400DF9A8F /* FriendsTableViewController.h */,
-				8465E2571D38E6E400DF9A8F /* FriendsTableViewController.m */,
+				84172C361D3CC84400B4E6C8 /* StarsTableViewController.h */,
+				84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */,
 			);
-			path = Friends;
+			path = Stars;
 			sourceTree = "<group>";
 		};
 		8465E25C1D38EE3500DF9A8F /* Poster */ = {
@@ -236,11 +260,13 @@
 		848F24AC1D33AE230009E1F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84172C391D3CCD4200B4E6C8 /* Friends */,
+				84172C321D3CC3F000B4E6C8 /* Setup */,
 				84172C2E1D3CACEA00B4E6C8 /* Fans */,
 				84172C2A1D3CA95300B4E6C8 /* Favorite */,
 				84172C261D3CA50000B4E6C8 /* Profile */,
 				DDFCB2531D394237008AC34F /* MyInfo */,
-				8465E2551D38E6E400DF9A8F /* Friends */,
+				8465E2551D38E6E400DF9A8F /* Stars */,
 				8465E2541D38E66800DF9A8F /* Playing */,
 			);
 			path = Controller;
@@ -411,15 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8465E2581D38E6E400DF9A8F /* FriendsTableViewController.m in Sources */,
+				84172C351D3CC41D00B4E6C8 /* SetupTableViewController.m in Sources */,
 				DDFCB2561D39428E008AC34F /* MyInfoTableViewController.m in Sources */,
 				8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */,
 				84172C291D3CA53000B4E6C8 /* ProfileTableViewController.m in Sources */,
 				848F24761D33ADC60009E1F0 /* main.m in Sources */,
+				84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */,
 				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
 				84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */,
 				8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */,
 				84172C2D1D3CA9E600B4E6C8 /* FavoriteTableViewController.m in Sources */,
+				84172C381D3CC84400B4E6C8 /* StarsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

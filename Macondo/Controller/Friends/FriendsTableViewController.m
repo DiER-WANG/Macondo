@@ -2,7 +2,7 @@
 //  FriendsTableViewController.m
 //  Macondo
 //
-//  Created by wangchangyang on 16/7/15.
+//  Created by wangchangyang on 16/7/18.
 //  Copyright © 2016年 wangchangyang. All rights reserved.
 //
 
@@ -10,10 +10,25 @@
 
 @implementation FriendsTableViewController
 
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    NSString *title = @"Hello, Welcome to Macondo!";
+    
+    if (section == 0) {
+        
+        return title = @"";
+        
+    }else {
+        
+        return title = @"来自社交账号好友";
+    }
+    
+    return title;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -23,47 +38,34 @@
         return 1;
     }
     
-    return 2;
+    return 10;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
     if (section == 0) {
         
-        return @"搜索";
+        return 1;
     }
-    return @"好友";
+    
+    return 18;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchCell" forIndexPath:indexPath];
-        
+    
+        static NSString *ident = @"FriendSearchCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
         return cell;
     }
     
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell" forIndexPath:indexPath];
+    static NSString *ident = @"FriendsCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
     
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.section == 0) {
-        
-        return 44;
-    }
-    
-    return 64;
-}
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-}
 
 @end
