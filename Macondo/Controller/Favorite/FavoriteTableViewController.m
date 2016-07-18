@@ -8,7 +8,27 @@
 
 #import "FavoriteTableViewController.h"
 
+@interface FavoriteTableViewController() <UISearchResultsUpdating>
+{
+    UISearchController *searchController;
+}
+
+@end
+
+
 @implementation FavoriteTableViewController
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    
+    searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    
+    searchController.searchResultsUpdater = self;
+    searchController.dimsBackgroundDuringPresentation = NO;
+    self.definesPresentationContext = YES;
+    self.tableView.tableHeaderView = searchController.searchBar;
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
