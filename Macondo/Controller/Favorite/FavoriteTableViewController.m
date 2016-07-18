@@ -51,6 +51,26 @@
     [self.tableView reloadData];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSString *targetString = @"Hello, Welcome to Macondo!";
+    
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+    
+        targetString = filterResultArr[selectedIndexPath.row];
+        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
+    } else {
+        targetString = dataSourceArr[selectedIndexPath.row];
+        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
+    }
+    
+    UIViewController *destVC = segue.destinationViewController;
+    
+    destVC.title = targetString;
+}
+
 #pragma mark - TableViewDelegate && TableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -59,7 +79,7 @@
         return filterResultArr.count;
     }
     
-    return 10;
+    return dataSourceArr.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,11 +99,11 @@
     
     if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
     
-        titleLabel.text = filterResultArr[indexPath.row];
+        accountLabel.text = filterResultArr[indexPath.row];
         
     } else {
     
-        accountLabel.text = [[NSString alloc] initWithFormat: @"%ld", indexPath.row];
+        accountLabel.text = [[NSString alloc] initWithFormat:@"%@", dataSourceArr[indexPath.row]];
     }
     
     return cell;
