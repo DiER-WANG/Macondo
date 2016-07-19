@@ -31,9 +31,6 @@
     
     self.tableView.tableHeaderView = searchCtler.searchBar;
     
-    searchCtler.searchBar.scopeButtonTitles = @[@"All", @"5", @"4", @"3"];
-    searchCtler.searchBar.delegate = self;
-    
     dataSourceArr = [NSMutableArray arrayWithArray:@[@"hello", @"world", @"hey", @"hah", @"hell"]];// 测试数据
     filterResultArr = [[NSMutableArray alloc] init];
 }
@@ -45,18 +42,10 @@
     for (NSString *targetString in dataSourceArr) {
         
         if ([targetString containsString:searchText]) {
-    
-            if ([scope isEqualToString:@"All"]) {
-            
-                [filterResultArr addObject:targetString];
-            } else {
-                if (targetString.length == scope.integerValue) {
-                
-                    [filterResultArr addObject:targetString];
-                }
-            }
+            [filterResultArr addObject:targetString];
         }
     }
+    
     [self.tableView reloadData];
 }
 
@@ -114,7 +103,6 @@
     titleLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
     
     if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
-    
         accountLabel.text = filterResultArr[indexPath.row];
     } else {
         accountLabel.text = [[NSString alloc] initWithFormat:@"%@", dataSourceArr[indexPath.row]];
@@ -124,22 +112,11 @@
 }
 
 #pragma mark - UISearchResultsUpdating 代理方法
-// 但点击搜索按钮时，会走该方法
+// 当 UISearchBar 中的 text 发生变化时，会调用该方法
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
   
     UISearchBar *searchBar = searchController.searchBar;
-    NSString *scopeString = searchBar.scopeButtonTitles[searchBar.selectedScopeButtonIndex];
-    
-    [self filterContentForSearchText:searchController.searchBar.text withScope:scopeString];
-}
-
-#pragma mark - UISearchBarDelegate
-- (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
-    
-    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
-    
-        [self filterContentForSearchText:searchBar.text withScope:searchBar.scopeButtonTitles[selectedScope]];
-    }
+    [self filterContentForSearchText:searchBar.text withScope:@"暂未使用到"];
 }
 
 @end

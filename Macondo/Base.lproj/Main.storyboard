@@ -89,50 +89,19 @@
         <scene sceneID="u8c-MH-K83">
             <objects>
                 <tableViewController id="JVv-va-JWx" customClass="StarsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="liO-n1-Rei">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="liO-n1-Rei">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="45" id="PtM-gZ-MUd">
-                                <rect key="frame" x="0.0" y="114" width="375" height="45"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PtM-gZ-MUd" id="Fj2-ZY-c9I">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bWt-RS-8T7">
-                                            <rect key="frame" x="15" y="8" width="345" height="28"/>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <searchBar contentMode="redraw" misplaced="YES" placeholder="搜索已关注好友" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-ta-OM7">
-                                            <rect key="frame" x="0.0" y="-1" width="375" height="45"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </searchBar>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="iYq-ta-OM7" firstAttribute="centerX" secondItem="Fj2-ZY-c9I" secondAttribute="centerX" id="2Yc-qf-ael"/>
-                                        <constraint firstItem="iYq-ta-OM7" firstAttribute="leading" secondItem="Fj2-ZY-c9I" secondAttribute="leadingMargin" constant="-8" id="Ar2-70-YOL"/>
-                                        <constraint firstItem="iYq-ta-OM7" firstAttribute="centerY" secondItem="Fj2-ZY-c9I" secondAttribute="centerY" id="DXR-bI-qQs"/>
-                                        <constraint firstItem="bWt-RS-8T7" firstAttribute="centerY" secondItem="Fj2-ZY-c9I" secondAttribute="centerY" id="Iml-7R-fmq"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="iYq-ta-OM7" secondAttribute="trailing" constant="-8" id="PC5-ZW-8QH"/>
-                                        <constraint firstItem="bWt-RS-8T7" firstAttribute="leading" secondItem="Fj2-ZY-c9I" secondAttribute="leadingMargin" constant="7" id="TJm-yh-aTZ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="bWt-RS-8T7" secondAttribute="trailing" constant="7" id="TzE-NI-Xa9"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bWt-RS-8T7" secondAttribute="bottom" id="dFm-sg-E3A"/>
-                                        <constraint firstItem="bWt-RS-8T7" firstAttribute="top" secondItem="Fj2-ZY-c9I" secondAttribute="topMargin" id="y1U-yN-iKl"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="64" id="RU5-XW-NaP">
-                                <rect key="frame" x="0.0" y="159" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RU5-XW-NaP" id="5Ky-oh-E8G">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIl-VE-heV">
+                                        <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIl-VE-heV">
                                             <rect key="frame" x="15" y="10" width="44" height="44"/>
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -140,7 +109,7 @@
                                                 <constraint firstAttribute="width" secondItem="VIl-VE-heV" secondAttribute="height" multiplier="1:1" id="cee-gT-2ZL"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称最长6位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-hW-47z">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称最长6位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-hW-47z">
                                             <rect key="frame" x="75" y="22" width="96" height="21"/>
                                             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -150,7 +119,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇后大道东" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp5-hp-41v">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="皇后大道东" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp5-hp-41v">
                                             <rect key="frame" x="184" y="22" width="176" height="21"/>
                                             <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -169,7 +138,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="M1D-Ao-Yzg" kind="show" id="3se-eS-YRw"/>
+                                    <segue destination="M1D-Ao-Yzg" kind="show" identifier="PlaySegue" id="3se-eS-YRw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -182,23 +151,12 @@
                     <navigationItem key="navigationItem" title="关注" id="IsT-ni-0hm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MFw-U9-Lln">
                             <connections>
-                                <segue destination="4hX-Ev-bSp" kind="show" id="9ZN-RF-pn4"/>
+                                <segue destination="4hX-Ev-bSp" kind="show" identifier="AddSegue" id="9ZN-RF-pn4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="bM1-5Z-AXV" id="Hyx-GU-UiV"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIt-AZ-rSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="bM1-5Z-AXV">
-                    <connections>
-                        <outlet property="delegate" destination="JVv-va-JWx" id="2P8-Zh-YEZ"/>
-                        <outlet property="searchContentsController" destination="JVv-va-JWx" id="6N4-EO-Sd4"/>
-                        <outlet property="searchResultsDataSource" destination="JVv-va-JWx" id="Kdf-6k-8ig"/>
-                        <outlet property="searchResultsDelegate" destination="JVv-va-JWx" id="wZR-Ei-KDC"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-802.5" y="603.5"/>
         </scene>
@@ -217,26 +175,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wCX-UW-jtB" id="ke7-rY-RP3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendSearchCell" id="etN-LP-NZH">
-                                <rect key="frame" x="0.0" y="158" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="etN-LP-NZH" id="fNt-yS-TNa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <searchBar contentMode="redraw" placeholder="搜索账号/添加好友" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-Kh-DFl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </searchBar>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KvC-Kh-DFl" secondAttribute="trailing" constant="-8" id="n9y-Cu-gkT"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="KvC-Kh-DFl" secondAttribute="bottom" constant="-8" id="oYn-Yi-JSL"/>
-                                        <constraint firstItem="KvC-Kh-DFl" firstAttribute="top" secondItem="fNt-yS-TNa" secondAttribute="topMargin" constant="-8" id="pCM-RE-o28"/>
-                                        <constraint firstItem="KvC-Kh-DFl" firstAttribute="leading" secondItem="fNt-yS-TNa" secondAttribute="leadingMargin" constant="-8" id="t0f-Na-A3z"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -911,26 +849,6 @@
                                         <constraint firstItem="Pde-9A-5bs" firstAttribute="width" secondItem="b0l-hc-r2Y" secondAttribute="width" multiplier="1:2" id="KmL-J5-tpO"/>
                                         <constraint firstItem="Pde-9A-5bs" firstAttribute="centerY" secondItem="b0l-hc-r2Y" secondAttribute="centerY" id="c8c-4u-MpX"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="beV-W1-pWA" secondAttribute="trailing" id="nK0-70-20v"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FansSearchCell" id="8Z1-oy-pXb">
-                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Z1-oy-pXb" id="rCl-wb-CDk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <searchBar contentMode="redraw" text="" placeholder="查找我的粉丝" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-IS-B32">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </searchBar>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="jYz-IS-B32" firstAttribute="leading" secondItem="rCl-wb-CDk" secondAttribute="leadingMargin" constant="-8" id="7qV-Ek-C5q"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="jYz-IS-B32" secondAttribute="trailing" constant="-8" id="PKX-Ep-wib"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="jYz-IS-B32" secondAttribute="bottom" constant="-8" id="Ufu-2J-ogj"/>
-                                        <constraint firstItem="jYz-IS-B32" firstAttribute="top" secondItem="rCl-wb-CDk" secondAttribute="topMargin" constant="-8" id="Yct-6v-tGr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
