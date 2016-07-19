@@ -10,7 +10,9 @@
 
 @interface FavoriteTableViewController() <UISearchResultsUpdating>
 {
-    UISearchController *searchController;
+    UISearchController  *searchCtler;
+    NSMutableArray      *dataSourceArr;
+    NSMutableArray      *filterResultArr;
 }
 
 @end
@@ -22,18 +24,62 @@
     
     [super viewDidLoad];
     
-    searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    searchCtler = [[UISearchController alloc] initWithSearchResultsController:nil];
+    searchCtler.searchResultsUpdater = self;
+    searchCtler.dimsBackgroundDuringPresentation = NO;
     
-    searchController.searchResultsUpdater = self;
-    searchController.dimsBackgroundDuringPresentation = NO;
     self.definesPresentationContext = YES;
-    self.tableView.tableHeaderView = searchController.searchBar;
+    self.tableView.tableHeaderView = searchCtler.searchBar;
+    
+    dataSourceArr = [NSMutableArray arrayWithArray:@[@"hello", @"world", @"hey", @"hah", @"hell"]];
+    
+    filterResultArr = [[NSMutableArray alloc] init];
 }
 
+- (void)filterContentForSearchText:(NSString *)searchText withScope:(NSString *)scope {
 
+    
+    [filterResultArr removeAllObjects];
+    for (NSString *targetString in dataSourceArr) {
+        
+        if ([targetString containsString:searchText]) {
+    
+            [filterResultArr addObject:targetString];
+        }
+    }
+    
+    [self.tableView reloadData];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    NSString *targetString = @"Hello, Welcome to Macondo!";
+    
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+    
+        targetString = filterResultArr[selectedIndexPath.row];
+        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
+    } else {
+        targetString = dataSourceArr[selectedIndexPath.row];
+        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
+    }
+    
+    UIViewController *destVC = segue.destinationViewController;
+    
+    destVC.title = targetString;
+}
+
+#pragma mark - TableViewDelegate && TableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+    
+        return filterResultArr.count;
+    }
+    
+    return dataSourceArr.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -47,12 +93,29 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
     
     UILabel *titleLabel = [cell viewWithTag:10];
-    titleLabel.text = [titleLabel.text stringByAppendingFormat:@"%ld", indexPath.row];
-    
     UILabel *accountLabel = [cell viewWithTag:11];
-    accountLabel.text = [[NSString alloc] initWithFormat: @"%ld", indexPath.row];
+    
+    titleLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
+    
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+    
+        accountLabel.text = filterResultArr[indexPath.row];
+        
+    } else {
+    
+        accountLabel.text = [[NSString alloc] initWithFormat:@"%@", dataSourceArr[indexPath.row]];
+    }
     
     return cell;
 }
+
+#pragma mark - UISearchResultsUpdating 代理方法
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+ 
+    [self filterContentForSearchText:searchController.searchBar.text withScope:@"ALL"];
+    
+    NSLog(@"searchBar's text:%@", searchController.searchBar.text);
+}
+
 
 @end
