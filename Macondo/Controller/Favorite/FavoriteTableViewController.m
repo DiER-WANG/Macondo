@@ -56,14 +56,12 @@
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     
     if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
-    
         targetString = filterResultArr[selectedIndexPath.row];
     } else {
         targetString = dataSourceArr[selectedIndexPath.row];
     }
     
     UIViewController *destVC = segue.destinationViewController;
-    
     destVC.title = targetString;
 }
 

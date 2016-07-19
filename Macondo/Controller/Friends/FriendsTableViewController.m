@@ -8,28 +8,53 @@
 
 #import "FriendsTableViewController.h"
 
-@implementation FriendsTableViewController
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 2;
+@interface FriendsTableViewController()<UISearchResultsUpdating>
+{
+    UISearchController  *searchCtler;
+    NSMutableArray      *dataSourceArr;
+    NSMutableArray      *searchResultArr;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    
-    NSString *title = @"Hello, Welcome to Macondo!";
+@end
 
-    return title = @"来自社交账号好友";
+@implementation FriendsTableViewController
+
+- (void)viewDidLoad {
+
+    searchCtler = [[UISearchController alloc] initWithSearchResultsController:nil];
+    searchCtler.searchResultsUpdater = self;
+    searchCtler.dimsBackgroundDuringPresentation = NO;
+    self.definesPresentationContext = YES;
+    
+    self.tableView.tableHeaderView = searchCtler.searchBar;
+    
+    dataSourceArr = [NSMutableArray arrayWithArray:@[@"100", @"200", @"300"]];
+    searchResultArr = [[NSMutableArray alloc] init];
+}
+
+- (void)filterContentForSearchText:(NSString *)searchText withText:(NSString *)scope {
+    
+    [searchResultArr removeAllObjects];
+    for (NSString *target in dataSourceArr) {
+        if ([target containsString:searchText]) {
+            [searchResultArr addObject:target];
+        }
+    }
+    [self.tableView reloadData];
+}
+
+#pragma mark - TabelViewDelegate && TableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    return 18;
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+        return searchResultArr.count;
+    }
+    return dataSourceArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -37,9 +62,24 @@
     static NSString *ident = @"FriendsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ident forIndexPath:indexPath];
     
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", searchResultArr[indexPath.row]];
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"%@", dataSourceArr[indexPath.row]];
+    }
+    
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
+#pragma mark - UISearchResultsUpdating
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+ 
+    [self filterContentForSearchText:searchController.searchBar.text withText:nil];
+}
 
 @end
