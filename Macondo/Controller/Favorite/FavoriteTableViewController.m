@@ -8,7 +8,7 @@
 
 #import "FavoriteTableViewController.h"
 
-@interface FavoriteTableViewController() <UISearchResultsUpdating>
+@interface FavoriteTableViewController() <UISearchResultsUpdating, UISearchBarDelegate>
 {
     UISearchController  *searchCtler;
     NSMutableArray      *dataSourceArr;
@@ -25,29 +25,38 @@
     [super viewDidLoad];
     
     searchCtler = [[UISearchController alloc] initWithSearchResultsController:nil];
-    searchCtler.searchResultsUpdater = self;
-    searchCtler.dimsBackgroundDuringPresentation = NO;
+    searchCtler.searchResultsUpdater = self;// conforms to the new protocol UISearchResultsUpdating
+    searchCtler.dimsBackgroundDuringPresentation = NO; // 当置为 YES 时，会有灰色遮罩，效果不是很明显
+    self.definesPresentationContext = YES; //ensure that the search bar does not remain on the screen if the user navigates to another view controller while the UISearchController is active.
     
-    self.definesPresentationContext = YES;
     self.tableView.tableHeaderView = searchCtler.searchBar;
     
-    dataSourceArr = [NSMutableArray arrayWithArray:@[@"hello", @"world", @"hey", @"hah", @"hell"]];
+    searchCtler.searchBar.scopeButtonTitles = @[@"All", @"5", @"4", @"3"];
+    searchCtler.searchBar.delegate = self;
     
+    dataSourceArr = [NSMutableArray arrayWithArray:@[@"hello", @"world", @"hey", @"hah", @"hell"]];// 测试数据
     filterResultArr = [[NSMutableArray alloc] init];
 }
 
 - (void)filterContentForSearchText:(NSString *)searchText withScope:(NSString *)scope {
-
     
     [filterResultArr removeAllObjects];
+    
     for (NSString *targetString in dataSourceArr) {
         
         if ([targetString containsString:searchText]) {
     
-            [filterResultArr addObject:targetString];
+            if ([scope isEqualToString:@"All"]) {
+            
+                [filterResultArr addObject:targetString];
+            } else {
+                if (targetString.length == scope.integerValue) {
+                
+                    [filterResultArr addObject:targetString];
+                }
+            }
         }
     }
-    
     [self.tableView reloadData];
 }
 
@@ -60,10 +69,8 @@
     if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
     
         targetString = filterResultArr[selectedIndexPath.row];
-        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
     } else {
         targetString = dataSourceArr[selectedIndexPath.row];
-        NSLog(@"didSelctIndexPath:%ld, %@", selectedIndexPath.row, targetString);
     }
     
     UIViewController *destVC = segue.destinationViewController;
@@ -85,6 +92,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    NSString *targetString = @"Hello, Welcome to Macondo!";
+    
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+        
+        targetString = filterResultArr[indexPath.row];
+    } else {
+        targetString = dataSourceArr[indexPath.row];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -100,9 +116,7 @@
     if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
     
         accountLabel.text = filterResultArr[indexPath.row];
-        
     } else {
-    
         accountLabel.text = [[NSString alloc] initWithFormat:@"%@", dataSourceArr[indexPath.row]];
     }
     
@@ -110,12 +124,22 @@
 }
 
 #pragma mark - UISearchResultsUpdating 代理方法
+// 但点击搜索按钮时，会走该方法
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
- 
-    [self filterContentForSearchText:searchController.searchBar.text withScope:@"ALL"];
+  
+    UISearchBar *searchBar = searchController.searchBar;
+    NSString *scopeString = searchBar.scopeButtonTitles[searchBar.selectedScopeButtonIndex];
     
-    NSLog(@"searchBar's text:%@", searchController.searchBar.text);
+    [self filterContentForSearchText:searchController.searchBar.text withScope:scopeString];
 }
 
+#pragma mark - UISearchBarDelegate
+- (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
+    
+    if (searchCtler.isActive && searchCtler.searchBar.text.length > 0) {
+    
+        [self filterContentForSearchText:searchBar.text withScope:searchBar.scopeButtonTitles[selectedScope]];
+    }
+}
 
 @end
