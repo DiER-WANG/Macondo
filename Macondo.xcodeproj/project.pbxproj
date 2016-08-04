@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840331211D5319DF006425D0 /* Introduce.key in Resources */ = {isa = PBXBuildFile; fileRef = 840331201D5319DF006425D0 /* Introduce.key */; };
 		84172C291D3CA53000B4E6C8 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C281D3CA53000B4E6C8 /* ProfileTableViewController.m */; };
 		84172C2D1D3CA9E600B4E6C8 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C2C1D3CA9E600B4E6C8 /* FavoriteTableViewController.m */; };
 		84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C301D3CAD1B00B4E6C8 /* FansTableViewController.m */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840331201D5319DF006425D0 /* Introduce.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = Introduce.key; sourceTree = "<group>"; };
 		84172C201D3C881C00B4E6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84172C211D3C882400B4E6C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84172C271D3CA53000B4E6C8 /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				848F24C31D33B3680009E1F0 /* RemoteSource.h */,
+				840331201D5319DF006425D0 /* Introduce.key */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848F24B81D33AF4F0009E1F0 /* Localizable.strings in Resources */,
+				840331211D5319DF006425D0 /* Introduce.key in Resources */,
 				848F24841D33ADC60009E1F0 /* LaunchScreen.storyboard in Resources */,
 				848F24BC1D33AF670009E1F0 /* InfoPlist.strings in Resources */,
 				848F24811D33ADC60009E1F0 /* Assets.xcassets in Resources */,

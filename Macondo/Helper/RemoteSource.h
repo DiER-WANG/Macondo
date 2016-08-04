@@ -7,5 +7,3 @@
 //
 
 #import <Foundation/Foundation.h>
-
-//http://moonlib.com/606.html 网易云音乐 API 介绍网站
