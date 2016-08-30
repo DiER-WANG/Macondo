@@ -11,7 +11,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="xQJ-BY-aRK">
             <objects>
-                <tabBarController id="CJC-Tu-rw8" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Content" id="CJC-Tu-rw8" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="QNW-Pf-TBY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
