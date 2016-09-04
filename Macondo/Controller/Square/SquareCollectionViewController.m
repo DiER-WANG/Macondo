@@ -71,7 +71,7 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 #pragma mark <UICollectionViewDataSource>
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 
-    return 0;
+    return 1;
 }
 
 
@@ -83,6 +83,8 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+    
+    cell.backgroundColor = [UIColor blueColor];
     return cell;
 }
 

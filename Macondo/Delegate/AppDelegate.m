@@ -20,6 +20,8 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
+    self.window.tintColor = [UIColor magentaColor];
+    
     return YES;
 }
 
