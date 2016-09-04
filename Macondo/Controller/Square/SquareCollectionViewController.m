@@ -7,7 +7,8 @@
 //
 
 #import "SquareCollectionViewController.h"
-#import "AccountManager.h"
+#import "SourceManager.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface SquareCollectionViewController ()
 
@@ -21,36 +22,6 @@ static NSString * const reuseIdentifier = @"AlbumCell";
     [super viewDidLoad];
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
- 
-    
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-    
-    [self.view addSubview:btn];
-    
-    btn.center = self.view.center;
-    
-    [btn setBackgroundColor:[UIColor redColor]];
-    
-    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)btnClicked:(UIButton *)btn {
-    
-    [[AccountManager sharedInstance] loginAccount:@"wang" password:@"123" success:^{
-        
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"登录成功" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-        
-        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-        
-        [self presentViewController:alert animated:YES completion:nil];
-        
-    } failure:^{
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"登录失败" message:@"" preferredStyle:UIAlertControllerStyleAlert];
-        
-        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
-        
-        [self presentViewController:alert animated:YES completion:nil];
-    }];
 }
 
 - (void)didReceiveMemoryWarning {

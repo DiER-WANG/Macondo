@@ -12,7 +12,10 @@
 #pragma mark - 测试 URL
 
 /** 测试 服务器地址 */
-#define TEST_SERVER_URL @"http://192.168.2.236:8080"
+#define TEST_SERVER_URL @"http://192.168.2.240:8080"
 
 /** 测试 登录接口 */
 #define TEST_LOGIN_URL  @"/api/v1/login"
+
+/** 获取音乐接口 */
+#define TEST_GET_SONG_URL @"/api/v1/music"

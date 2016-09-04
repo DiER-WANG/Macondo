@@ -33,6 +33,8 @@
     
     dataSourceArr = [NSMutableArray arrayWithArray:@[@"hello", @"world", @"hey", @"hah", @"hell"]];// 测试数据
     filterResultArr = [[NSMutableArray alloc] init];
+    
+    [searchCtler loadViewIfNeeded];
 }
 
 - (void)filterContentForSearchText:(NSString *)searchText withScope:(NSString *)scope {

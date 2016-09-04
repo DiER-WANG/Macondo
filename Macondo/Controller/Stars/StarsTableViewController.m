@@ -37,6 +37,8 @@
                                                      ]];
 
     searchResultArr = [[NSMutableArray alloc] init];
+    
+    [searchCtler loadViewIfNeeded];
 }
 
 - (void)filterContentForSearchText:(NSString *)searchText withScope:(NSString *)scope {

@@ -32,6 +32,7 @@
     
     dataSourceArr = [NSMutableArray arrayWithArray:@[@"h1", @"h2", @"h3", @"h4"]];
     searchResultArr = [[NSMutableArray alloc] init];
+    [searchCtler loadViewIfNeeded];
 }
 
 - (void)filterContentForSearchText:(NSString *)searchText withScope:(NSString *)scope {
