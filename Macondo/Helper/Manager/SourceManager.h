@@ -12,6 +12,9 @@
 
 + (instancetype)sharedInstance;
 
-- (NSString *)getSongById:(NSString *)songId;
+/** 获取专辑信息 */
+- (void)getAlbum:(NSNumber *)albumId withResultBlock:(void(^)(NSDictionary *albumInfo))resultBlock;
+
+
 
 @end

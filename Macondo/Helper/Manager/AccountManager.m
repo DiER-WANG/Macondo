@@ -8,9 +8,8 @@
 
 #import "AccountManager.h"
 #import "AFNetworking.h"
-#import "Server.h"
+#import "ServerURL.h"
 #import <AVFoundation/AVFoundation.h>
-
 
 static AccountManager *singleton = nil;
 

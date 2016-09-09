@@ -19,3 +19,6 @@
 
 /** 获取音乐接口 */
 #define TEST_GET_SONG_URL @"/api/v1/music"
+
+/** 测试 获取专辑信息的地址 */
+#define TEST_SERVER_ALBUM @"/api/v1/music/albums/%ld"

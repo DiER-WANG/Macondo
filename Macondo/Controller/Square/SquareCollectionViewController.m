@@ -12,6 +12,8 @@
 
 @interface SquareCollectionViewController ()
 
+@property (nonatomic, strong) NSMutableArray *musicArr;
+
 @end
 
 @implementation SquareCollectionViewController
@@ -21,8 +23,35 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _musicArr = [NSMutableArray array];
+    
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:btn];
+    btn.center = self.view.center;
+    [btn setBackgroundColor:[UIColor redColor]];
+    
+    [btn addTarget:self action:@selector(getAlbumBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)getAlbumBtnClick:(UIButton *)btn {
+    
+    __weak typeof(self) weakSelf = self;
+    [[SourceManager sharedInstance] getAlbum:@(2801259) withResultBlock:^(NSDictionary *albumInfo) {
+        if (albumInfo) {
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            
+            NSDictionary *album = [albumInfo objectForKey:@"album"];
+            NSArray *array = [album objectForKey:@"songs"];
+            
+            [_musicArr addObjectsFromArray:array];
+            [strongSelf.collectionView reloadData];
+        }
+    }];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -48,14 +77,14 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return 10;
+    return _musicArr.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    
     cell.backgroundColor = [UIColor blueColor];
+    
     return cell;
 }
 

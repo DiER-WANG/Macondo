@@ -14,6 +14,8 @@
 		84172C381D3CC84400B4E6C8 /* StarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */; };
 		84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */; };
 		842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842626411D4229AF008688C7 /* SquareCollectionViewController.m */; };
+		843754B71D82C63800DD48FC /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B31D82C63800DD48FC /* NSObject+YYModel.m */; };
+		843754B81D82C63800DD48FC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B51D82C63800DD48FC /* YYClassInfo.m */; };
 		8437680F1D7BFD03003E115A /* SourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437680E1D7BFD03003E115A /* SourceManager.m */; };
 		8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25A1D38E71000DF9A8F /* PlayingViewController.m */; };
 		8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25E1D38EE6700DF9A8F /* PosterImageView.m */; };
@@ -72,6 +74,11 @@
 		84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
 		842626401D4229AF008688C7 /* SquareCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCollectionViewController.h; sourceTree = "<group>"; };
 		842626411D4229AF008688C7 /* SquareCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCollectionViewController.m; sourceTree = "<group>"; };
+		843754B21D82C63800DD48FC /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		843754B31D82C63800DD48FC /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		843754B41D82C63800DD48FC /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		843754B51D82C63800DD48FC /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		843754B61D82C63800DD48FC /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		8437680D1D7BFD03003E115A /* SourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceManager.h; sourceTree = "<group>"; };
 		8437680E1D7BFD03003E115A /* SourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceManager.m; sourceTree = "<group>"; };
 		8465E2591D38E71000DF9A8F /* PlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingViewController.h; sourceTree = "<group>"; };
@@ -108,7 +115,7 @@
 		84BB17811D62F7A700290769 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		84BB17821D62F7A700290769 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		84CFDDEB1D7C10D300BFDA79 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		84E7AD031D65B39F00F7AA7C /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		84E7AD031D65B39F00F7AA7C /* ServerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerURL.h; sourceTree = "<group>"; };
 		84E7AD051D65B3E300F7AA7C /* Introduce.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = Introduce.key; sourceTree = "<group>"; };
 		84E7AD091D65B44800F7AA7C /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
 		84E7AD0A1D65B44800F7AA7C /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
@@ -195,6 +202,18 @@
 				842626411D4229AF008688C7 /* SquareCollectionViewController.m */,
 			);
 			path = Square;
+			sourceTree = "<group>";
+		};
+		843754B11D82C63800DD48FC /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754B21D82C63800DD48FC /* NSObject+YYModel.h */,
+				843754B31D82C63800DD48FC /* NSObject+YYModel.m */,
+				843754B41D82C63800DD48FC /* YYClassInfo.h */,
+				843754B51D82C63800DD48FC /* YYClassInfo.m */,
+				843754B61D82C63800DD48FC /* YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 		8465E2541D38E66800DF9A8F /* Playing */ = {
@@ -344,6 +363,7 @@
 		84BB17741D62F77A00290769 /* 3rdLib */ = {
 			isa = PBXGroup;
 			children = (
+				843754B11D82C63800DD48FC /* YYModel */,
 				84BB17751D62F7A600290769 /* AFNetworking */,
 			);
 			path = 3rdLib;
@@ -372,7 +392,7 @@
 		84E7AD021D65B35D00F7AA7C /* Marco */ = {
 			isa = PBXGroup;
 			children = (
-				84E7AD031D65B39F00F7AA7C /* Server.h */,
+				84E7AD031D65B39F00F7AA7C /* ServerURL.h */,
 			);
 			path = Marco;
 			sourceTree = "<group>";
@@ -549,8 +569,10 @@
 				848F24761D33ADC60009E1F0 /* main.m in Sources */,
 				84E7AD0B1D65B44800F7AA7C /* AccountManager.m in Sources */,
 				84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */,
+				843754B71D82C63800DD48FC /* NSObject+YYModel.m in Sources */,
 				84BB17861D62F7A700290769 /* AFURLRequestSerialization.m in Sources */,
 				842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */,
+				843754B81D82C63800DD48FC /* YYClassInfo.m in Sources */,
 				84BB17881D62F7A700290769 /* AFURLSessionManager.m in Sources */,
 				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
 				84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */,
