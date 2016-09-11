@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AlbumModel.h"
 
 @interface SourceManager : NSObject
 
 + (instancetype)sharedInstance;
 
 /** 获取专辑信息 */
-- (void)getAlbum:(NSNumber *)albumId withResultBlock:(void(^)(NSDictionary *albumInfo))resultBlock;
+- (void)getAlbum:(NSNumber *)albumId withResultBlock:(void(^)(AlbumModel *album))resultBlock;
 
 
 

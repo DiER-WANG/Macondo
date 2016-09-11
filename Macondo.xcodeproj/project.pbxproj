@@ -16,6 +16,12 @@
 		842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842626411D4229AF008688C7 /* SquareCollectionViewController.m */; };
 		843754B71D82C63800DD48FC /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B31D82C63800DD48FC /* NSObject+YYModel.m */; };
 		843754B81D82C63800DD48FC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B51D82C63800DD48FC /* YYClassInfo.m */; };
+		843754BC1D852D1A00DD48FC /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754BB1D852D1A00DD48FC /* AlbumModel.m */; };
+		843754C51D85359600DD48FC /* ArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754C41D85359600DD48FC /* ArtistModel.m */; };
+		843754CB1D85375B00DD48FC /* AlbumInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754CA1D85375B00DD48FC /* AlbumInfoModel.m */; };
+		843754CE1D853E8400DD48FC /* SongModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754CD1D853E8400DD48FC /* SongModel.m */; };
+		843754D21D85403B00DD48FC /* MusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754D11D85403B00DD48FC /* MusicModel.m */; };
+		843754D61D854CE700DD48FC /* SquareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754D51D854CE700DD48FC /* SquareCollectionViewCell.m */; };
 		8437680F1D7BFD03003E115A /* SourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8437680E1D7BFD03003E115A /* SourceManager.m */; };
 		8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25A1D38E71000DF9A8F /* PlayingViewController.m */; };
 		8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465E25E1D38EE6700DF9A8F /* PosterImageView.m */; };
@@ -79,6 +85,18 @@
 		843754B41D82C63800DD48FC /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		843754B51D82C63800DD48FC /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		843754B61D82C63800DD48FC /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		843754BA1D852D1A00DD48FC /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		843754BB1D852D1A00DD48FC /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
+		843754C31D85359600DD48FC /* ArtistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistModel.h; sourceTree = "<group>"; };
+		843754C41D85359600DD48FC /* ArtistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistModel.m; sourceTree = "<group>"; };
+		843754C91D85375B00DD48FC /* AlbumInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumInfoModel.h; sourceTree = "<group>"; };
+		843754CA1D85375B00DD48FC /* AlbumInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumInfoModel.m; sourceTree = "<group>"; };
+		843754CC1D853E8400DD48FC /* SongModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongModel.h; sourceTree = "<group>"; };
+		843754CD1D853E8400DD48FC /* SongModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongModel.m; sourceTree = "<group>"; };
+		843754D01D85403B00DD48FC /* MusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicModel.h; sourceTree = "<group>"; };
+		843754D11D85403B00DD48FC /* MusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicModel.m; sourceTree = "<group>"; };
+		843754D41D854CE700DD48FC /* SquareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCollectionViewCell.h; sourceTree = "<group>"; };
+		843754D51D854CE700DD48FC /* SquareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCollectionViewCell.m; sourceTree = "<group>"; };
 		8437680D1D7BFD03003E115A /* SourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceManager.h; sourceTree = "<group>"; };
 		8437680E1D7BFD03003E115A /* SourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceManager.m; sourceTree = "<group>"; };
 		8465E2591D38E71000DF9A8F /* PlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingViewController.h; sourceTree = "<group>"; };
@@ -216,6 +234,60 @@
 			path = YYModel;
 			sourceTree = "<group>";
 		};
+		843754B91D852CEF00DD48FC /* AlbumModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754BA1D852D1A00DD48FC /* AlbumModel.h */,
+				843754BB1D852D1A00DD48FC /* AlbumModel.m */,
+			);
+			path = AlbumModel;
+			sourceTree = "<group>";
+		};
+		843754BE1D85345A00DD48FC /* ArtistModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754C31D85359600DD48FC /* ArtistModel.h */,
+				843754C41D85359600DD48FC /* ArtistModel.m */,
+			);
+			path = ArtistModel;
+			sourceTree = "<group>";
+		};
+		843754BF1D85346E00DD48FC /* AlbumInfoModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754C91D85375B00DD48FC /* AlbumInfoModel.h */,
+				843754CA1D85375B00DD48FC /* AlbumInfoModel.m */,
+			);
+			path = AlbumInfoModel;
+			sourceTree = "<group>";
+		};
+		843754C01D85347900DD48FC /* SongModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754CC1D853E8400DD48FC /* SongModel.h */,
+				843754CD1D853E8400DD48FC /* SongModel.m */,
+			);
+			path = SongModel;
+			sourceTree = "<group>";
+		};
+		843754CF1D85400700DD48FC /* MusicModel */ = {
+			isa = PBXGroup;
+			children = (
+				843754D01D85403B00DD48FC /* MusicModel.h */,
+				843754D11D85403B00DD48FC /* MusicModel.m */,
+			);
+			path = MusicModel;
+			sourceTree = "<group>";
+		};
+		843754D31D854C9600DD48FC /* SquareCell */ = {
+			isa = PBXGroup;
+			children = (
+				843754D41D854CE700DD48FC /* SquareCollectionViewCell.h */,
+				843754D51D854CE700DD48FC /* SquareCollectionViewCell.m */,
+			);
+			path = SquareCell;
+			sourceTree = "<group>";
+		};
 		8465E2541D38E66800DF9A8F /* Playing */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +410,7 @@
 		848F24AD1D33AE470009E1F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				843754D31D854C9600DD48FC /* SquareCell */,
 				8465E25C1D38EE3500DF9A8F /* Poster */,
 			);
 			path = View;
@@ -346,6 +419,11 @@
 		848F24AE1D33AE5E0009E1F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				843754CF1D85400700DD48FC /* MusicModel */,
+				843754C01D85347900DD48FC /* SongModel */,
+				843754BF1D85346E00DD48FC /* AlbumInfoModel */,
+				843754BE1D85345A00DD48FC /* ArtistModel */,
+				843754B91D852CEF00DD48FC /* AlbumModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -560,15 +638,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843754C51D85359600DD48FC /* ArtistModel.m in Sources */,
 				84172C351D3CC41D00B4E6C8 /* SetupTableViewController.m in Sources */,
 				84BB17851D62F7A700290769 /* AFSecurityPolicy.m in Sources */,
+				843754BC1D852D1A00DD48FC /* AlbumModel.m in Sources */,
 				8437680F1D7BFD03003E115A /* SourceManager.m in Sources */,
+				843754CB1D85375B00DD48FC /* AlbumInfoModel.m in Sources */,
 				DDFCB2561D39428E008AC34F /* MyInfoTableViewController.m in Sources */,
+				843754D21D85403B00DD48FC /* MusicModel.m in Sources */,
 				8465E25B1D38E71000DF9A8F /* PlayingViewController.m in Sources */,
 				84172C291D3CA53000B4E6C8 /* ProfileTableViewController.m in Sources */,
 				848F24761D33ADC60009E1F0 /* main.m in Sources */,
 				84E7AD0B1D65B44800F7AA7C /* AccountManager.m in Sources */,
 				84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */,
+				843754CE1D853E8400DD48FC /* SongModel.m in Sources */,
 				843754B71D82C63800DD48FC /* NSObject+YYModel.m in Sources */,
 				84BB17861D62F7A700290769 /* AFURLRequestSerialization.m in Sources */,
 				842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */,
@@ -576,6 +659,7 @@
 				84BB17881D62F7A700290769 /* AFURLSessionManager.m in Sources */,
 				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
 				84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */,
+				843754D61D854CE700DD48FC /* SquareCollectionViewCell.m in Sources */,
 				8465E25F1D38EE6700DF9A8F /* PosterImageView.m in Sources */,
 				84BB17871D62F7A700290769 /* AFURLResponseSerialization.m in Sources */,
 				84BB17841D62F7A700290769 /* AFNetworkReachabilityManager.m in Sources */,

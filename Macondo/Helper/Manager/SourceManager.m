@@ -17,7 +17,6 @@
 @end
 
 
-
 @implementation SourceManager
 
 + (instancetype)sharedInstance {
@@ -29,7 +28,7 @@
     return singleton;
 }
 
-- (void)getAlbum:(NSNumber *)albumId withResultBlock:(void(^)(NSDictionary *albumInfo))resultBlock {
+- (void)getAlbum:(NSNumber *)albumId withResultBlock:(void(^)(AlbumModel *album))resultBlock {
 
     NSString *targetURLStr = [TEST_SERVER_URL stringByAppendingString:TEST_SERVER_ALBUM];
     
@@ -46,7 +45,11 @@
         }
         
         if (dict) {
-            resultBlock(dict);
+            
+            NSDictionary *albumDict = [dict objectForKey:@"album"];
+        
+            AlbumModel *albumModel = [AlbumModel yy_modelWithDictionary:albumDict];
+            resultBlock(albumModel);
         } else {
             resultBlock(nil);
         }

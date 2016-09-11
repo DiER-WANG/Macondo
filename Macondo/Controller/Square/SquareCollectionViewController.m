@@ -10,6 +10,8 @@
 #import "SourceManager.h"
 #import <AVFoundation/AVFoundation.h>
 
+#import "SquareCollectionViewCell.h"
+
 @interface SquareCollectionViewController ()
 
 @property (nonatomic, strong) NSMutableArray *musicArr;
@@ -25,8 +27,6 @@ static NSString * const reuseIdentifier = @"AlbumCell";
     
     _musicArr = [NSMutableArray array];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:btn];
     btn.center = self.view.center;
@@ -38,20 +38,15 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 - (void)getAlbumBtnClick:(UIButton *)btn {
     
     __weak typeof(self) weakSelf = self;
-    [[SourceManager sharedInstance] getAlbum:@(2801259) withResultBlock:^(NSDictionary *albumInfo) {
-        if (albumInfo) {
+    [[SourceManager sharedInstance] getAlbum:@(2801259) withResultBlock:^(AlbumModel *album) {
+        if (album) {
             __strong typeof(weakSelf) strongSelf = weakSelf;
             
-            NSDictionary *album = [albumInfo objectForKey:@"album"];
-            NSArray *array = [album objectForKey:@"songs"];
-            
-            [_musicArr addObjectsFromArray:array];
+            [_musicArr addObjectsFromArray:album.songs];
             [strongSelf.collectionView reloadData];
         }
     }];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -81,9 +76,12 @@ static NSString * const reuseIdentifier = @"AlbumCell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor blueColor];
+    SquareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    UILabel *label = [cell viewWithTag:10];
+    
+    label.text = [_musicArr[indexPath.row] name];
     
     return cell;
 }
