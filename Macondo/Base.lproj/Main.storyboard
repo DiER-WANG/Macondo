@@ -197,6 +197,9 @@
                                     <constraint firstItem="D7X-IA-ynx" firstAttribute="centerY" secondItem="beU-cj-NCj" secondAttribute="centerY" id="n0D-OT-7Ve"/>
                                     <constraint firstItem="D7X-IA-ynx" firstAttribute="width" secondItem="beU-cj-NCj" secondAttribute="width" id="yXW-md-GMf"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="M1D-Ao-Yzg" kind="show" id="uK1-HU-jfn"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -336,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2G-Od-ktS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="47.5" y="603.5"/>
+            <point key="canvasLocation" x="47.5" y="619.5"/>
         </scene>
         <!--我的-->
         <scene sceneID="79Q-2X-r6Y">
@@ -1267,5 +1270,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ytV-pL-Xz3"/>
+        <segue reference="uK1-HU-jfn"/>
     </inferredMetricsTieBreakers>
 </document>
