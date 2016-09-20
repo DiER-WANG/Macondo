@@ -8,9 +8,11 @@
 
 #import "SquareCollectionViewController.h"
 #import "SourceManager.h"
-#import <AVFoundation/AVFoundation.h>
-
 #import "SquareCollectionViewCell.h"
+#import "PlayingViewController.h"
+#import "SongModel.h"
+
+#import "STKAudioPlayer.h"
 
 @interface SquareCollectionViewController ()
 
@@ -53,15 +55,22 @@ static NSString * const reuseIdentifier = @"AlbumCell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    UIViewController *destVC = segue.destinationViewController;
+    if ([destVC isKindOfClass:[PlayingViewController class]]) {
+        
+        SongModel *song = _musicArr[[[[self.collectionView indexPathsForSelectedItems] firstObject] row]];
+        destVC.title = song.name;
+        STKAudioPlayer *oplayer = [[STKAudioPlayer alloc] init];
+        [oplayer playURL:[NSURL URLWithString:song.mp3Url]];
+    }
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {

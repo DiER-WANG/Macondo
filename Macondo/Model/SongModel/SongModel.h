@@ -19,7 +19,7 @@
 @property (nonatomic, assign) long long playedNum;
 @property (nonatomic, assign) long long dayPlays;
 @property (nonatomic, assign) long long hearTime;
-@property (nonatomic, copy  ) NSString  *mp3UrlstarredNum;
+@property (nonatomic, copy  ) NSString  *mp3Url;
 @property (nonatomic, copy  ) NSString  *rtUrls;
 @property (nonatomic, assign) long long copyrightId;
 
