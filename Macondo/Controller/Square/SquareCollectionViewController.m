@@ -11,8 +11,9 @@
 #import "SquareCollectionViewCell.h"
 #import "PlayingViewController.h"
 #import "SongModel.h"
-
 #import "STKAudioPlayer.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface SquareCollectionViewController ()
 
@@ -68,7 +69,42 @@ static NSString * const reuseIdentifier = @"AlbumCell";
         destVC.title = song.name;
         STKAudioPlayer *oplayer = [[STKAudioPlayer alloc] init];
         [oplayer playURL:[NSURL URLWithString:song.mp3Url]];
+        
+        [self showCustomizedControlCenter];
     }
+}
+
+- (void)showCustomizedControlCenter {
+    
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    /* the cool control center registration */
+    MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCenter];
+    [commandCenter.playCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    [commandCenter.dislikeCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    [commandCenter.likeCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    [commandCenter.nextTrackCommand addTargetWithHandler:^MPRemoteCommandHandlerStatus(MPRemoteCommandEvent *event) {
+        return MPRemoteCommandHandlerStatusSuccess;
+    }];
+    
+    /* setting the track title, album title and button texts to match the screenshot */
+    commandCenter.likeCommand.localizedTitle = @"Thumb Up";
+    commandCenter.dislikeCommand.localizedTitle = @"Thumb down";
+    
+    MPNowPlayingInfoCenter* info = [MPNowPlayingInfoCenter defaultCenter];
+    NSMutableDictionary* newInfo = [NSMutableDictionary dictionary];
+    
+    [newInfo setObject:@"Mixtape" forKey:MPMediaItemPropertyTitle];
+    [newInfo setObject:@"Jamie Cullum" forKey:MPMediaItemPropertyArtist];
+    
+    info.nowPlayingInfo = newInfo;
 }
 
 
