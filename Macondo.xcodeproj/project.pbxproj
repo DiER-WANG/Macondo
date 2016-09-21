@@ -625,7 +625,8 @@
 				TargetAttributes = {
 					848F24701D33ADC60009E1F0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = E8KT45CMGH;
+						DevelopmentTeam = 9X33CT335A;
+						ProvisioningStyle = Automatic;
 					};
 					848F24891D33ADC60009E1F0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -900,7 +901,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = E8KT45CMGH;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9X33CT335A;
 				INFOPLIST_FILE = Macondo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.wchyang.Macondo;
@@ -913,7 +915,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = E8KT45CMGH;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9X33CT335A;
 				INFOPLIST_FILE = Macondo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.wchyang.Macondo;
