@@ -7,13 +7,18 @@
 //
 
 #import "PlayingViewController.h"
+#import "AudioPlayManager.h"
 
 @implementation PlayingViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [[AudioPlayManager sharedInstance] playMusic:_song.mp3Url];
+}
 
 - (IBAction)listenFollow:(UIButton *)sender {
-    
     sender.selected = !sender.isSelected;
+    [[AudioPlayManager sharedInstance] pauseOrPlay];    
 }
 
 /** 分享当前音乐 */
