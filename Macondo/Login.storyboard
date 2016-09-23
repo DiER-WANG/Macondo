@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="flm-Qp-Z60">
             <objects>
-                <viewController id="daG-Pe-lD3" sceneMemberID="viewController">
+                <viewController id="daG-Pe-lD3" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HGk-AB-ZH2"/>
                         <viewControllerLayoutGuide type="bottom" id="Bdp-f9-8zV"/>
@@ -17,12 +17,42 @@
                     <view key="view" contentMode="scaleToFill" id="9Zv-f3-D4E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-pl-BCi">
+                                <frame key="frameInset" minX="-1308" minY="142" width="1" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="listen with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6R-zQ-l4C">
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPJ-b7-ix9">
+                                <color key="backgroundColor" red="0.50524328859060408" green="0.75946413590604023" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="J27-af-uA4"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="LoginBtnClicked:" destination="daG-Pe-lD3" eventType="touchUpInside" id="gk7-8S-cOC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y6R-zQ-l4C" firstAttribute="centerX" secondItem="9Zv-f3-D4E" secondAttribute="centerX" id="7y5-fB-NSY"/>
+                            <constraint firstItem="IPJ-b7-ix9" firstAttribute="centerX" secondItem="9Zv-f3-D4E" secondAttribute="centerX" id="DBO-dh-fIj"/>
+                            <constraint firstItem="Bdp-f9-8zV" firstAttribute="top" secondItem="IPJ-b7-ix9" secondAttribute="bottom" constant="20" id="I9n-tU-UCV"/>
+                            <constraint firstItem="Y6R-zQ-l4C" firstAttribute="centerY" secondItem="9Zv-f3-D4E" secondAttribute="centerY" constant="-72" id="tj1-ik-4qH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEu-Pc-64V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="293"/>
+            <point key="canvasLocation" x="408.80000000000001" y="292.80359820089956"/>
         </scene>
     </scenes>
 </document>
