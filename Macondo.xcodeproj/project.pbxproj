@@ -13,6 +13,7 @@
 		84172C351D3CC41D00B4E6C8 /* SetupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C341D3CC41D00B4E6C8 /* SetupTableViewController.m */; };
 		84172C381D3CC84400B4E6C8 /* StarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */; };
 		84172C3C1D3CCD6900B4E6C8 /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */; };
+		841B18871D953CB4000ED198 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B18861D953CB4000ED198 /* LoginViewController.m */; };
 		842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842626411D4229AF008688C7 /* SquareCollectionViewController.m */; };
 		843754B71D82C63800DD48FC /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B31D82C63800DD48FC /* NSObject+YYModel.m */; };
 		843754B81D82C63800DD48FC /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843754B51D82C63800DD48FC /* YYClassInfo.m */; };
@@ -89,6 +90,8 @@
 		84172C371D3CC84400B4E6C8 /* StarsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarsTableViewController.m; sourceTree = "<group>"; };
 		84172C3A1D3CCD6900B4E6C8 /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
 		84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		841B18851D953CB4000ED198 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		841B18861D953CB4000ED198 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		842626401D4229AF008688C7 /* SquareCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareCollectionViewController.h; sourceTree = "<group>"; };
 		842626411D4229AF008688C7 /* SquareCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareCollectionViewController.m; sourceTree = "<group>"; };
 		843754B21D82C63800DD48FC /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -245,6 +248,16 @@
 				84172C3B1D3CCD6900B4E6C8 /* FriendsTableViewController.m */,
 			);
 			path = Friends;
+			sourceTree = "<group>";
+		};
+		841B18841D953C8B000ED198 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				841B18851D953CB4000ED198 /* LoginViewController.h */,
+				841B18861D953CB4000ED198 /* LoginViewController.m */,
+			);
+			name = Login;
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 		8426263F1D422987008688C7 /* Square */ = {
@@ -428,6 +441,7 @@
 		848F24AC1D33AE230009E1F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				841B18841D953C8B000ED198 /* Login */,
 				8426263F1D422987008688C7 /* Square */,
 				84172C391D3CCD4200B4E6C8 /* Friends */,
 				84172C321D3CC3F000B4E6C8 /* Setup */,
@@ -761,6 +775,7 @@
 				84CB19051D9401F900C1B564 /* SourceManager.m in Sources */,
 				84BB17861D62F7A700290769 /* AFURLRequestSerialization.m in Sources */,
 				842626421D4229AF008688C7 /* SquareCollectionViewController.m in Sources */,
+				841B18871D953CB4000ED198 /* LoginViewController.m in Sources */,
 				843754B81D82C63800DD48FC /* YYClassInfo.m in Sources */,
 				84BB17881D62F7A700290769 /* AFURLSessionManager.m in Sources */,
 				84FE5E3B1D914FD20072421C /* STKQueueEntry.m in Sources */,
