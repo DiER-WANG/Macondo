@@ -350,7 +350,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ufp-XD-S7y" id="M9G-EH-fUf">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -372,7 +372,7 @@
         <!--详细信息-->
         <scene sceneID="nh0-LX-vJB">
             <objects>
-                <tableViewController title="详细信息" id="0Aa-Tp-Snf" sceneMemberID="viewController">
+                <tableViewController id="0Aa-Tp-Snf" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="7Eb-NI-2sj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -384,7 +384,7 @@
                                         <rect key="frame" x="0.0" y="99" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JnH-HS-hJK" id="dXW-xY-fC4">
-                                            <frame key="frameInset" width="375" height="79"/>
+                                            <frame key="frameInset" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iVB-5T-3aZ">
@@ -431,7 +431,7 @@
                                         <rect key="frame" x="0.0" y="215" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4iL-cA-dNm" id="FvT-IZ-pFe">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <frame key="frameInset" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1NW-xf-fkE">
@@ -454,12 +454,15 @@
                                                 <constraint firstItem="1NW-xf-fkE" firstAttribute="leading" secondItem="FvT-IZ-pFe" secondAttribute="leadingMargin" constant="7" id="NeH-VF-y0C"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="J26-Cx-EE9" kind="show" id="XLv-G5-0oY"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InfoCell" id="A2C-Jt-vDt">
                                         <rect key="frame" x="0.0" y="259" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2C-Jt-vDt" id="mSo-Lf-OVQ">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <frame key="frameInset" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjD-MQ-yn2">
@@ -482,12 +485,15 @@
                                                 <constraint firstItem="GjD-MQ-yn2" firstAttribute="leading" secondItem="mSo-Lf-OVQ" secondAttribute="leadingMargin" constant="7" id="sQT-wP-ZFL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QRC-Fj-rhv" kind="show" id="jAI-Gb-nQk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="InfoCell" id="NuH-rW-emE">
                                         <rect key="frame" x="0.0" y="303" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NuH-rW-emE" id="Vbh-54-ksR">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <frame key="frameInset" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IDe-w3-ZnW">
@@ -510,6 +516,9 @@
                                                 <constraint firstItem="IDe-w3-ZnW" firstAttribute="leading" secondItem="Vbh-54-ksR" secondAttribute="leadingMargin" constant="7" id="zDy-oQ-2AT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="QRC-Fj-rhv" kind="show" id="YFh-UK-nJM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -519,7 +528,7 @@
                                         <rect key="frame" x="0.0" y="383" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aDh-sD-m7A" id="SGR-z9-QTj">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <frame key="frameInset" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n8C-Rc-hXP">
@@ -551,6 +560,7 @@
                             <outlet property="delegate" destination="0Aa-Tp-Snf" id="TAD-En-PHt"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="详细信息" id="6VV-SF-Pit"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ntu-DG-Vfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1039,7 +1049,7 @@
         <!--喜欢的音乐-->
         <scene sceneID="ydH-1C-fdc">
             <objects>
-                <tableViewController title="喜欢的音乐" hidesBottomBarWhenPushed="YES" id="J26-Cx-EE9" customClass="FavoriteTableViewController" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="J26-Cx-EE9" customClass="FavoriteTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="T2L-mX-DhG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1086,7 +1096,7 @@
                             <outlet property="delegate" destination="J26-Cx-EE9" id="duz-Xg-9iJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="他喜欢的音乐" id="WpS-y6-x5v"/>
+                    <navigationItem key="navigationItem" title="喜欢的音乐" id="03E-Ue-yan"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdo-xU-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1095,7 +1105,7 @@
         <!--粉丝-->
         <scene sceneID="2yV-Mp-WUf">
             <objects>
-                <tableViewController title="粉丝" hidesBottomBarWhenPushed="YES" id="QRC-Fj-rhv" customClass="FansTableViewController" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="QRC-Fj-rhv" customClass="FansTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wtx-1z-bYY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1130,6 +1140,9 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="beV-W1-pWA" secondAttribute="trailing" id="nK0-70-20v"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0Aa-Tp-Snf" kind="show" id="YlW-Jk-w49"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1137,6 +1150,7 @@
                             <outlet property="delegate" destination="QRC-Fj-rhv" id="4E0-Dy-zHk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="粉丝" id="pgj-si-B51"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hu5-rC-Te4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1424,7 +1438,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="dYq-bW-ncZ"/>
         <segue reference="ytV-pL-Xz3"/>
+        <segue reference="YlW-Jk-w49"/>
         <segue reference="oym-4H-Af3"/>
     </inferredMetricsTieBreakers>
 </document>
