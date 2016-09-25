@@ -13,12 +13,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[AudioPlayManager sharedInstance] playMusic:_song.mp3Url];
+    
+    if (_song) {
+        [[AudioPlayManager sharedInstance] playMusic:_song.mp3Url];
+    }
 }
 
 - (IBAction)listenFollow:(UIButton *)sender {
     sender.selected = !sender.isSelected;
-    [[AudioPlayManager sharedInstance] pauseOrPlay];    
+    if (_song) {
+        [[AudioPlayManager sharedInstance] pauseOrPlay];
+    }    
 }
 
 /** 分享当前音乐 */
