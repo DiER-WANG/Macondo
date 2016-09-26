@@ -55,6 +55,7 @@
 		84FE5E391D914FD20072421C /* STKHTTPDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE5E2D1D914FD20072421C /* STKHTTPDataSource.m */; };
 		84FE5E3A1D914FD20072421C /* STKLocalFileDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE5E2F1D914FD20072421C /* STKLocalFileDataSource.m */; };
 		84FE5E3B1D914FD20072421C /* STKQueueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE5E311D914FD20072421C /* STKQueueEntry.m */; };
+		DD3C9D581D97B18200AA1934 /* ListenersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3C9D571D97B18200AA1934 /* ListenersTableViewController.m */; };
 		DDFCB2561D39428E008AC34F /* MyInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFCB2551D39428E008AC34F /* MyInfoTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +175,8 @@
 		84FE5E301D914FD20072421C /* STKQueueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKQueueEntry.h; sourceTree = "<group>"; };
 		84FE5E311D914FD20072421C /* STKQueueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKQueueEntry.m; sourceTree = "<group>"; };
 		84FE5E321D914FD20072421C /* StreamingKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StreamingKit-Prefix.pch"; sourceTree = "<group>"; };
+		DD3C9D561D97B18200AA1934 /* ListenersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenersTableViewController.h; sourceTree = "<group>"; };
+		DD3C9D571D97B18200AA1934 /* ListenersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenersTableViewController.m; sourceTree = "<group>"; };
 		DDC5FE491D39C4500052AB8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		DDC5FE4A1D39C4500052AB8B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDFCB2541D39428E008AC34F /* MyInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoTableViewController.h; sourceTree = "<group>"; };
@@ -441,6 +444,7 @@
 		848F24AC1D33AE230009E1F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DD3C9D551D97B12900AA1934 /* Listeners */,
 				841B18841D953C8B000ED198 /* Login */,
 				8426263F1D422987008688C7 /* Square */,
 				84172C391D3CCD4200B4E6C8 /* Friends */,
@@ -605,6 +609,15 @@
 			path = StreamingKit;
 			sourceTree = "<group>";
 		};
+		DD3C9D551D97B12900AA1934 /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				DD3C9D561D97B18200AA1934 /* ListenersTableViewController.h */,
+				DD3C9D571D97B18200AA1934 /* ListenersTableViewController.m */,
+			);
+			path = Listeners;
+			sourceTree = "<group>";
+		};
 		DDFCB2531D394237008AC34F /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,7 +694,7 @@
 				TargetAttributes = {
 					848F24701D33ADC60009E1F0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = E8KT45CMGH;
+						DevelopmentTeam = 9X33CT335A;
 						ProvisioningStyle = Automatic;
 					};
 					848F24891D33ADC60009E1F0 = {
@@ -780,6 +793,7 @@
 				84BB17881D62F7A700290769 /* AFURLSessionManager.m in Sources */,
 				84FE5E3B1D914FD20072421C /* STKQueueEntry.m in Sources */,
 				848F24AA1D33AE0C0009E1F0 /* AppDelegate.m in Sources */,
+				DD3C9D581D97B18200AA1934 /* ListenersTableViewController.m in Sources */,
 				84FE5E361D914FD20072421C /* STKCoreFoundationDataSource.m in Sources */,
 				84172C311D3CAD1B00B4E6C8 /* FansTableViewController.m in Sources */,
 				84FE5E331D914FD20072421C /* NSMutableArray+STKAudioPlayer.m in Sources */,
@@ -961,10 +975,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E8KT45CMGH;
+				DEVELOPMENT_TEAM = 9X33CT335A;
 				INFOPLIST_FILE = Macondo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.wchyang.Macondo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wchyang.Macondo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -975,10 +989,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E8KT45CMGH;
+				DEVELOPMENT_TEAM = 9X33CT335A;
 				INFOPLIST_FILE = Macondo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangMore.wchyang.Macondo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wchyang.Macondo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
